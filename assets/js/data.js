@@ -67,10 +67,10 @@ window.SITE = {
     {
       title: "Real-Time Video Generation with Pyramid Attention Broadcast",
       authors: "Xuanlei Zhao*, Xiaolong Jin*, Kai Wang*+, Yang You+",
-      venue: "ICLR 2025", type: "conference", year: 2025, note: "Merged into HF Diffusers",
+      venue: "ICLR 2025", type: "conference", year: 2025, note: "Co-first & corresponding author · Merged into HF Diffusers",
       topics: ["efficient"], selected: true,
       img: "assets/img/papers/arXiv-2024-PAB.webp",
-      links: { Project: "https://oahzxl.github.io/PAB/", X: "https://x.com/oahzxl/status/1805939975420330298" }
+      links: { Paper: "https://arxiv.org/abs/2408.12588", Project: "https://oahzxl.github.io/PAB/", X: "https://x.com/oahzxl/status/1805939975420330298" }
     },
     {
       title: "A Closer Look at Time Steps is Worthy of Triple Speed-Up for Diffusion Model Training",
@@ -90,8 +90,8 @@ window.SITE = {
     },
     {
       title: "InfoBatch: Lossless Training Speed Up by Unbiased Dynamic Data Pruning",
-      authors: "Ziheng Qin, Kai Wang*, Zangwei Zheng, Jianyang Gu, Xiangyu Peng, Zhaopan Xu, Daquan Zhou, Lei Shang, Baigui Sun, Xuansong Xie, Yang You",
-      venue: "ICLR 2024", type: "conference", year: 2024, note: "Oral (1.2%) · Project lead",
+      authors: "Ziheng Qin*, Kai Wang*, Zangwei Zheng, Jianyang Gu, Xiangyu Peng, Zhaopan Xu, Daquan Zhou, Lei Shang, Baigui Sun, Xuansong Xie, Yang You",
+      venue: "ICLR 2024", type: "conference", year: 2024, note: "Oral (1.2%) · Co-first author & project lead",
       topics: ["data", "efficient"], selected: true,
       img: "assets/img/papers/ICLR-2024-InfoBatch.webp",
       links: { Paper: "https://arxiv.org/pdf/2303.04947.pdf", Code: "https://github.com/NUS-HPC-AI-Lab/InfoBatch", OpenReview: "https://openreview.net/forum?id=C61sk5LsK6" }
