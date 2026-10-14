@@ -26,6 +26,10 @@ The hero, About section, and Research cards are written directly in `index.html`
 
 To convert a new figure: `cwebp -q 80 -resize 960 0 figure.png -o assets/img/papers/figure.webp`
 
+## Publishing changes
+
+After editing `assets/css/style.css` or anything in `assets/js/`, bump the `?v=` version on the three `<link>`/`<script>` tags at the top and bottom of `index.html` (any new value works, e.g. today's date). This makes browsers fetch the new files instead of mixing a cached old stylesheet with the new page.
+
 ## Preview locally
 
 ```bash
