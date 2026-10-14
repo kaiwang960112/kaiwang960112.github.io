@@ -8,6 +8,7 @@
     });
   };
   var arrow = '<svg class="ico"><use href="#i-arrow"/></svg>';
+  var SCHOLAR = 'https://scholar.google.com/citations?user=i2II0XIAAAAJ';
 
   /* ---------- Publications ---------- */
   var TOPICS = [
@@ -39,7 +40,9 @@
         '<img src="' + esc(p.img) + '" alt="" loading="lazy" decoding="async"></button>' : '<div></div>') +
       '<div>' +
         '<div class="pub-meta"><span class="badge ' + esc(p.type) + '">' + esc(p.venue) + '</span>' +
-          (p.note ? '<span class="badge note">' + esc(p.note) + '</span>' : '') + '</div>' +
+          (p.note ? '<span class="badge note">' + esc(p.note) + '</span>' : '') +
+          (p.citations ? '<a class="badge cite" href="' + SCHOLAR + '" target="_blank" rel="noopener" title="Google Scholar citations">' +
+            '<svg class="ico"><use href="#i-cite"/></svg>' + p.citations.toLocaleString('en-US') + ' citations</a>' : '') + '</div>' +
         '<h3>' + esc(p.title) + '</h3>' +
         '<p class="authors">' + renderAuthors(p.authors) + '</p>' +
         '<div class="pub-links">' + links + '</div>' +
