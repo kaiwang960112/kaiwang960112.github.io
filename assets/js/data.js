@@ -4,6 +4,7 @@
  * Authors: "Kai Wang" is bolded automatically. Mark equal contribution with *
  * and corresponding/advising with + right after a name, e.g. "Kai Wang*+".
  * topics: agents | paramgen | efficient | data | vision
+ * citations: optional Google Scholar count, shown as a highlighted badge.
  */
 window.SITE = {
   publications: [
@@ -131,7 +132,8 @@ window.SITE = {
       title: "CAFE: Learning to Condense Dataset by Aligning Features",
       authors: "Kai Wang, Bo Zhao, Xiangyu Peng, Zheng Zhu, Shuo Yang, Shuo Wang, Guan Huang, Hakan Bilen, Xinchao Wang, Yang You",
       venue: "CVPR 2022", type: "conference", year: 2022,
-      topics: ["data"],
+      topics: ["data"], selected: true,
+      citations: 470,
       img: "assets/img/papers/CVPR-2022-CAFE.webp",
       links: { Paper: "https://arxiv.org/pdf/2203.01531.pdf", Code: "https://github.com/kaiwang960112/CAFE" }
     },
@@ -155,7 +157,8 @@ window.SITE = {
       title: "Suppressing Uncertainties for Large-Scale Facial Expression Recognition",
       authors: "Kai Wang, Xiaojiang Peng, Jianfei Yang, Shijian Lu, Yu Qiao",
       venue: "CVPR 2020", type: "conference", year: 2020,
-      topics: ["vision"],
+      topics: ["vision"], selected: true,
+      citations: 995,
       img: "assets/img/papers/CVPR-2020-SCN.webp",
       links: { Paper: "https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_Suppressing_Uncertainties_for_Large-Scale_Facial_Expression_Recognition_CVPR_2020_paper.pdf", Code: "https://github.com/kaiwang960112/Self-Cure-Network" }
     },
@@ -163,7 +166,8 @@ window.SITE = {
       title: "Region Attention Networks for Pose and Occlusion Robust Facial Expression Recognition",
       authors: "Kai Wang, Xiaojiang Peng, Jianfei Yang, Debin Meng, Yu Qiao",
       venue: "IEEE TIP 2020", type: "journal", year: 2020,
-      topics: ["vision"],
+      topics: ["vision"], selected: true,
+      citations: 1175,
       img: "assets/img/papers/TIP-2020-RAN.webp",
       links: { Paper: "https://arxiv.org/pdf/1905.04075.pdf", Code: "https://github.com/kaiwang960112/Challenge-condition-FER-dataset" }
     }

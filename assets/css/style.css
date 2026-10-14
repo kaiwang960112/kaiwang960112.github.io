@@ -308,6 +308,11 @@ b, strong { font-weight: 600; }
 .badge.journal { background: rgba(8, 145, 178, .13); color: var(--accent-2); }
 .badge.preprint, .badge.report { background: rgba(100, 116, 139, .14); color: var(--text-2); }
 .badge.note { background: rgba(219, 39, 119, .11); color: var(--hot); }
+.badge.cite { gap: 4px; background: rgba(217, 119, 6, .14); color: #b45309; }
+.badge.cite:hover { text-decoration: none; background: rgba(217, 119, 6, .22); }
+.badge.cite .ico { width: 12px; height: 12px; }
+:root[data-theme="dark"] .badge.cite { color: #fbbf24; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge.cite { color: #fbbf24; } }
 .pub h3 { font: 600 17px/1.4 var(--font); letter-spacing: -.005em; margin-bottom: 6px; }
 .pub .authors { margin: 0 0 12px; font-size: 14px; color: var(--text-2); }
 .pub .authors .me { color: var(--text); font-weight: 600; }
