@@ -80,6 +80,13 @@
       try { localStorage.setItem('pubFilter', current); } catch (e2) {}
       render();
     });
+    // Research cards link to the matching publication filter.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[data-filter]');
+      if (!a) return;
+      current = a.dataset.filter;
+      render();
+    });
     render();
   }
 
