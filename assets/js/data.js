@@ -78,7 +78,7 @@ window.SITE = {
       topics: ["efficient"], selected: true,
       img: "assets/img/papers/arXiv-2024-PAB.webp",
       views: 97000,
-      links: { Paper: "https://arxiv.org/abs/2408.12588", Project: "https://oahzxl.github.io/PAB/", X: "https://x.com/oahzxl/status/1805939975420330298" }
+      links: { Paper: "https://arxiv.org/abs/2408.12588", Code: "https://github.com/NUS-HPC-AI-Lab/VideoSys", Project: "https://oahzxl.github.io/PAB/", X: "https://x.com/oahzxl/status/1805939975420330298" }
     },
     {
       title: "A Closer Look at Time Steps is Worthy of Triple Speed-Up for Diffusion Model Training",
