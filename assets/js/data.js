@@ -247,8 +247,8 @@ window.SITE = {
       { name: "Yong Zhong", now: "Undergraduate, SUSTech" }
     ],
     alumni: [
-      { name: "Xuanlei Zhao", url: "https://oahzxl.github.io/", now: "Ph.D., NUS" },
-      { name: "Ziqiao Wang", url: "https://openreview.net/profile?id=~Ziqiao_Wang2", now: "Ph.D., NUS" },
+      { name: "Xuanlei Zhao", url: "https://oahzxl.github.io/", now: "Ph.D., NUS", pubs: ["ICLR 2025"] },
+      { name: "Ziqiao Wang", url: "https://openreview.net/profile?id=~Ziqiao_Wang2", now: "Ph.D., NUS", pubs: ["NeurIPS 2025"] },
       { name: "Yuhao Zhou", url: "https://scholar.google.com/citations?user=bGKF2tUAAAAJ", now: "Ph.D., Sichuan University" },
       { name: "Zhiyuan Liang", url: "https://jerryliang24.github.io/", now: "Undergraduate, USTC", pubs: ["3× NeurIPS 2025"] },
       { name: "Dongwen Tang", url: "https://scholar.google.com/citations?user=9lKm_5IAAAAJ", now: "Undergraduate, Xidian University", pubs: ["2× NeurIPS 2025", "EMNLP 2025"] },
