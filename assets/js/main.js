@@ -33,7 +33,15 @@
 
   function pubHTML(p) {
     var links = Object.keys(p.links || {}).map(function (k) {
-      return '<a href="' + esc(p.links[k]) + '" target="_blank" rel="noopener">' + esc(k) + arrow + '</a>';
+      var url = p.links[k], extra = '', repo = '';
+      var gh = k === 'Code' && /^https:\/\/github\.com\/([^\/]+\/[^\/#?]+)/.exec(url);
+      if (gh) {
+        repo = gh[1].replace(/\.git$/, '');
+        extra = '<span class="stat" data-stars="' + esc(repo) + '" hidden><svg class="ico"><use href="#i-cite"/></svg><span></span></span>';
+      } else if (k === 'X' && p.views) {
+        extra = '<span class="stat" title="Views on X"><svg class="ico"><use href="#i-eye"/></svg>' + esc(compact(p.views)) + '</span>';
+      }
+      return '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(k) + extra + arrow + '</a>';
     }).join('');
     return '<article class="pub reveal">' +
       (p.img ? '<button class="pub-thumb" type="button" data-full="' + esc(p.img) + '" aria-label="Enlarge figure for ' + esc(p.title) + '">' +
@@ -53,6 +61,55 @@
     if (key === 'all') return true;
     if (key === 'selected') return !!p.selected;
     return (p.topics || []).indexOf(key) !== -1;
+  }
+
+  /* ---------- GitHub stars (live, cached for 12h per browser) ---------- */
+  function compact(n) {
+    if (typeof n === 'string') return n;
+    if (n >= 1e6) return (n / 1e6).toFixed(n >= 1e7 ? 0 : 1).replace(/\.0$/, '') + 'M';
+    if (n >= 1e3) return (n / 1e3).toFixed(n >= 1e4 ? 0 : 1).replace(/\.0$/, '') + 'k';
+    return String(n);
+  }
+  var STAR_TTL = 12 * 3600 * 1000, starReqs = {};
+  function cachedStars(repo) {
+    try {
+      var c = JSON.parse(localStorage.getItem('stars:' + repo) || 'null');
+      if (c && Date.now() - c.t < STAR_TTL) return c.n;
+    } catch (e) {}
+    return null;
+  }
+  function fetchStars(repo) {
+    if (starReqs[repo]) return starReqs[repo];
+    var cached = cachedStars(repo);
+    if (cached !== null) return (starReqs[repo] = Promise.resolve(cached));
+    if (!window.fetch) return Promise.resolve(null);
+    starReqs[repo] = fetch('https://api.github.com/repos/' + repo)
+      .then(function (r) { if (!r.ok) throw r; return r.json(); })
+      .then(function (j) { return j.stargazers_count; })
+      .catch(function () {
+        // Fallback when the GitHub API rate limit (60 requests/hour) is hit.
+        return fetch('https://img.shields.io/github/stars/' + repo + '.json')
+          .then(function (r) { if (!r.ok) throw r; return r.json(); })
+          .then(function (j) { return /^[\d.]+[kM]?$/.test(j.message) ? j.message : null; });
+      })
+      .then(function (n) {
+        if (n !== null && n !== undefined) {
+          try { localStorage.setItem('stars:' + repo, JSON.stringify({ n: n, t: Date.now() })); } catch (e) {}
+        }
+        return n;
+      })
+      .catch(function () { return null; });
+    return starReqs[repo];
+  }
+  function loadStars(root) {
+    root.querySelectorAll('[data-stars]').forEach(function (el) {
+      fetchStars(el.dataset.stars).then(function (n) {
+        if (n === null || n === undefined || n === 0) return;
+        el.lastChild.textContent = compact(n);
+        el.title = (typeof n === 'number' ? n.toLocaleString('en-US') : n) + ' GitHub stars';
+        el.hidden = false;
+      });
+    });
   }
 
   function initPubs() {
@@ -75,6 +132,7 @@
       var shown = pubs.filter(function (p) { return matches(p, current); });
       list.innerHTML = shown.length ? shown.map(pubHTML).join('') : '<p class="empty">No papers in this category yet.</p>';
       observe(list.querySelectorAll('.reveal'));
+      loadStars(list);
     }
     bar.addEventListener('click', function (e) {
       var b = e.target.closest('.chip');

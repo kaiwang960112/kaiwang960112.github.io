@@ -325,6 +325,13 @@ b, strong { font-weight: 600; }
 }
 .pub-links a:hover { text-decoration: none; color: var(--accent); border-color: var(--accent); }
 .pub-links .ico { width: 13px; height: 13px; }
+.pub-links .stat {
+  display: inline-flex; align-items: center; gap: 3px; margin-left: 2px; padding-left: 7px;
+  border-left: 1px solid var(--border); font-variant-numeric: tabular-nums; color: var(--text-3); font-weight: 600;
+}
+.pub-links .stat[hidden] { display: none; }
+.pub-links .stat .ico { width: 12px; height: 12px; }
+.pub-links .stat[data-stars] .ico { color: #d97706; }
 .empty { color: var(--text-3); padding: 24px 0; }
 @media (max-width: 680px) {
   .pub { grid-template-columns: 1fr; gap: 14px; padding: 14px; }

@@ -5,6 +5,8 @@
  * and corresponding/advising with + right after a name, e.g. "Kai Wang*+".
  * topics: agents | paramgen | efficient | data | vision
  * citations: optional Google Scholar count, shown as a highlighted badge.
+ * views: optional view count of the X post (number, e.g. 125000), shown on the X button.
+ * GitHub stars on Code buttons are fetched live; nothing to update by hand.
  */
 window.SITE = {
   publications: [
