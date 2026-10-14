@@ -16,6 +16,7 @@ window.SITE = {
       venue: "arXiv 2026", type: "preprint", year: 2026,
       topics: ["agents"], selected: true,
       img: "assets/img/papers/arxiv_statem_2026.webp",
+      views: 194000,
       links: { Paper: "https://arxiv.org/abs/2608.15089", Code: "https://github.com/henryqin1997/statem", X: "https://x.com/henryqin1997/status/2089608567418691863" }
     },
     {
@@ -32,6 +33,7 @@ window.SITE = {
       venue: "Tech Report 2026", type: "report", year: 2026,
       topics: ["paramgen"], selected: true,
       img: "assets/img/papers/HY-WU.webp",
+      views: 77000,
       links: { Paper: "https://arxiv.org/pdf/2603.07236", Code: "https://github.com/Tencent-Hunyuan/HY-WU", Project: "https://tencent-hy-wu.github.io/", X: "https://x.com/TencentHunyuan/status/2029644529578692723" }
     },
     {
@@ -40,6 +42,7 @@ window.SITE = {
       venue: "NeurIPS 2025", type: "conference", year: 2025,
       topics: ["paramgen"], selected: true,
       img: "assets/img/papers/arXiv-2025-DnD.webp",
+      views: 46000,
       links: { Paper: "https://arxiv.org/pdf/2506.16406", Code: "https://github.com/jerryliang24/Drag-and-Drop-LLMs", X: "https://x.com/_akhaliq/status/1937017302999851124" }
     },
     {
@@ -48,6 +51,7 @@ window.SITE = {
       venue: "NeurIPS 2025", type: "conference", year: 2025,
       topics: ["paramgen"], selected: true,
       img: "assets/img/papers/arXiv-2025-RPG.webp",
+      views: 45000,
       links: { Paper: "https://arxiv.org/pdf/2501.11587", Code: "https://github.com/NUS-HPC-AI-Lab/Recurrent-Parameter-Generation", X: "https://x.com/VictorKaiWang1/status/1881380005118419435" }
     },
     {
@@ -56,6 +60,7 @@ window.SITE = {
       venue: "Tech Report 2024", type: "report", year: 2024,
       topics: ["efficient"],
       img: "assets/img/papers/enhance-a-video.webp",
+      views: 46000,
       links: { Paper: "https://arxiv.org/pdf/2502.07508", Code: "https://github.com/NUS-HPC-AI-Lab/Enhance-A-Video", X: "https://x.com/YangL_7/status/1870116980717695243" }
     },
     {
@@ -72,6 +77,7 @@ window.SITE = {
       venue: "ICLR 2025", type: "conference", year: 2025, note: "Co-first & corresponding author · Merged into HF Diffusers",
       topics: ["efficient"], selected: true,
       img: "assets/img/papers/arXiv-2024-PAB.webp",
+      views: 97000,
       links: { Paper: "https://arxiv.org/abs/2408.12588", Project: "https://oahzxl.github.io/PAB/", X: "https://x.com/oahzxl/status/1805939975420330298" }
     },
     {
@@ -88,6 +94,7 @@ window.SITE = {
       venue: "arXiv 2024", type: "preprint", year: 2024,
       topics: ["paramgen"], selected: true,
       img: "assets/img/papers/arXiv-2024-p-diff.webp",
+      views: 475000,
       links: { Paper: "https://arxiv.org/pdf/2402.13144.pdf", Code: "https://github.com/NUS-HPC-AI-Lab/Neural-Network-Diffusion", X: "https://twitter.com/_akhaliq/status/1760136914861019645" }
     },
     {
