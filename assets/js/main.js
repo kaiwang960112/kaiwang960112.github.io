@@ -14,7 +14,7 @@
   var TOPICS = [
     ['selected', 'Selected'],
     ['all', 'All'],
-    ['agents', 'Agents'],
+    ['agents', 'Long-Horizon Agent Design'],
     ['paramgen', 'Parameter Generation'],
     ['efficient', 'Efficient Generation & Training'],
     ['data', 'Data-Centric AI'],
