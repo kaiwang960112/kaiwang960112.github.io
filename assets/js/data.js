@@ -258,7 +258,10 @@ window.SITE = {
       { name: "Chonghua Liao", url: "https://scholar.google.com/citations?user=2fB3YFcAAAAJ", now: "Ph.D., Yao Class, Tsinghua" },
       { name: "Junrui Zhang", now: "Ph.D., NUS" },
       { name: "Mengxuan Wu", url: "https://cypher-bruce.github.io/", now: "Undergraduate, SUSTech → Ph.D., UT Austin" },
-      { name: "Yong Zhong", now: "Undergraduate, SUSTech" }
+      { name: "Yong Zhong", now: "Undergraduate, SUSTech" },
+      { name: "Yanpei Guo", url: "https://scholar.google.com/citations?user=3Et-A_0AAAAJ&hl=en", now: "Research Intern @ Tencent" },
+      { name: "Haiyang Guo", url: "https://ghy0501.github.io/guohaiyang0501.github.io/", now: "Research Intern @ Tencent" },
+      { name: "Xinhao Zhong", url: "https://scholar.google.com/citations?user=RFvD0Q4AAAAJ&hl=zh-CN", now: "Research Intern @ Tencent" }
     ],
     alumni: [
       { name: "Xuanlei Zhao", url: "https://oahzxl.github.io/", now: "Ph.D., NUS", pubs: ["ICLR 2025"] },

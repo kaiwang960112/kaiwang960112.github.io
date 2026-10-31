@@ -191,7 +191,7 @@
     return arr.map(function (p) {
       return '<li class="person reveal">' + avatar(p.name) + '<div>' +
         '<div class="person-name">' + (p.url ? '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.name) + '</a>' : esc(p.name)) + '</div>' +
-        '<div class="person-now">' + esc(p.now) + '</div>' +
+        (p.now ? '<div class="person-now">' + esc(p.now) + '</div>' : '') +
         (p.pubs ? '<div class="person-pubs">' + p.pubs.map(function (x) { return '<span>' + esc(x) + '</span>'; }).join('') + '</div>' : '') +
         '</div></li>';
     }).join('');
