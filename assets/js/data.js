@@ -261,7 +261,8 @@ window.SITE = {
       { name: "Yong Zhong", now: "Undergraduate, SUSTech" },
       { name: "Yanpei Guo", url: "https://scholar.google.com/citations?user=3Et-A_0AAAAJ&hl=en", now: "Ph.D., NUS" },
       { name: "Haiyang Guo", url: "https://ghy0501.github.io/guohaiyang0501.github.io/", now: "Ph.D., CASIA" },
-      { name: "Xinhao Zhong", url: "https://scholar.google.com/citations?user=RFvD0Q4AAAAJ&hl=zh-CN", now: "Ph.D., Harbin Institute of Technology" }
+      { name: "Xinhao Zhong", url: "https://scholar.google.com/citations?user=RFvD0Q4AAAAJ&hl=zh-CN", now: "Ph.D., HIT" },
+      { name: "Jinliang Zeng", now: "Undergraduate (CS), School of the Gifted Young, USTC" }
     ],
     alumni: [
       { name: "Xuanlei Zhao", url: "https://oahzxl.github.io/", now: "Ph.D., NUS", pubs: ["ICLR 2025"] },
