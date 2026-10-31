@@ -265,7 +265,7 @@ window.SITE = {
       { name: "Ziqiao Wang", url: "https://openreview.net/profile?id=~Ziqiao_Wang2", now: "Ph.D., NUS", pubs: ["NeurIPS 2025"] },
       { name: "Yuhao Zhou", url: "https://scholar.google.com/citations?user=bGKF2tUAAAAJ", now: "Ph.D., Sichuan University" },
       { name: "Zhiyuan Liang", url: "https://jerryliang24.github.io/", now: "Undergraduate, USTC", pubs: ["3× NeurIPS 2025"] },
-      { name: "Dongwen Tang", url: "https://scholar.google.com/citations?user=9lKm_5IAAAAJ", now: "Undergraduate, Xidian University", pubs: ["2× NeurIPS 2025", "EMNLP 2025"] },
+      { name: "Dongwen Tang", url: "https://scholar.google.com/citations?user=9lKm_5IAAAAJ", now: "Undergraduate, Xidian University → Ph.D., NUS", pubs: ["2× NeurIPS 2025", "EMNLP 2025"] },
       { name: "Zekai Li", url: "https://lizekai-richard.github.io/", now: "Ph.D., UCSD", pubs: ["2× CVPR 2025", "2× NeurIPS 2025"] },
       { name: "Yukun Zhou", url: "https://twitter.com/YuKunZhou9", now: "Undergraduate, Xidian University", pubs: ["CVPR 2025"] },
       { name: "Tianyi Li", url: "https://scholar.google.com/citations?user=pHXKrL0AAAAJ", now: "Ph.D., HKU" },
