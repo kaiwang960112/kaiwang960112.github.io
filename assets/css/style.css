@@ -269,6 +269,7 @@ b, strong { font-weight: 600; }
 .impact time { display: block; font-size: 12px; font-weight: 600; color: var(--text-3); font-variant-numeric: tabular-nums; margin-bottom: 2px; }
 .impact .txt { font-size: 14px; line-height: 1.55; color: var(--text-2); }
 .impact .txt b { color: var(--text); }
+.impact .txt a b, .news .txt a b { color: inherit; }
 @media (max-width: 900px) { .news-grid { grid-template-columns: 1fr; gap: 32px; } }
 @media (max-width: 600px) { .news li { grid-template-columns: 1fr; gap: 0; } }
 

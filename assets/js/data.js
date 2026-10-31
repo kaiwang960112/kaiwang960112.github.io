@@ -227,8 +227,8 @@ window.SITE = {
   // Products & Impact column: product launches, adoption, and community reach.
   // icon: agent | weights | bolt (used when there is no logo).
   impact: [
-    { date: "Oct 2026", logo: "assets/img/logos/ima.webp", text: 'Our agent technology now also powers online PPT creation in <b>Tencent ima</b>.' },
-    { date: "Sep 2026", logo: "assets/img/logos/workbuddy.webp", text: 'Our agent technology now powers online PPT creation in <b>Tencent WorkBuddy</b>, delivering strong results for users. <a href="https://mp.weixin.qq.com/s/kB1es3oU-Ilg-sI5zddHRw">Read more</a>' },
+    { date: "Oct 2026", logo: "assets/img/logos/ima.webp", text: 'Our agent technology now also powers online PPT creation in <a href="https://ima.qq.com/"><b>Tencent ima</b></a>.' },
+    { date: "Sep 2026", logo: "assets/img/logos/workbuddy.webp", text: 'Our agent technology now powers online PPT creation in <a href="https://www.workbuddy.ai/"><b>Tencent WorkBuddy</b></a>, delivering strong results for users. <a href="https://mp.weixin.qq.com/s/kB1es3oU-Ilg-sI5zddHRw">Read more</a>' },
     { icon: "agent", date: "Aug 2026", text: '<a href="https://arxiv.org/abs/2608.15089"><b>StateM</b></a> + DeepSeek reaches state-of-the-art on <b>Terminal-Bench 2.1</b>, with <b>1.5k+</b> <a href="https://github.com/henryqin1997/statem">GitHub stars</a> and <b>190K+</b> <a href="https://x.com/henryqin1997/status/2089608567418691863">views on X</a>.' },
     { icon: "weights", date: "Mar 2026", text: '<a href="https://tencent-hy-wu.github.io/"><b>HY-WU (混元-无相)</b></a> is released: a next-generation AI system featuring formless and adaptive parameter generation.' },
     { icon: "bolt", date: "Feb 2025", text: '<a href="https://oahzxl.github.io/PAB/">Pyramid Attention Broadcast</a> is merged into <a href="https://huggingface.co/docs/diffusers/main/en/api/cache">HuggingFace Diffusers</a>.' },
