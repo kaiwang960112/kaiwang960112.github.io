@@ -256,6 +256,7 @@ b, strong { font-weight: 600; }
 .news time { font-size: 13px; font-weight: 600; color: var(--text-3); padding-top: 3px; font-variant-numeric: tabular-nums; }
 .news .txt { color: var(--text-2); }
 .news .txt b { color: var(--text); }
+.news-logo { display: inline-block; width: 20px; height: 20px; margin: 0 6px 0 0; vertical-align: -4px; border-radius: 5px; }
 .news li[hidden] { display: none; }
 @media (max-width: 600px) { .news li { grid-template-columns: 1fr; gap: 0; } }
 

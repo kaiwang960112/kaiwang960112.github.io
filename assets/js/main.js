@@ -151,7 +151,9 @@
     var LIMIT = 6, open = false;
     list.innerHTML = news.map(function (n, i) {
       return '<li class="' + (n.hot ? 'hot' : '') + '"' + (i >= LIMIT ? ' hidden' : '') + '>' +
-        '<time>' + esc(n.date) + '</time><div class="txt">' + n.text + '</div></li>';
+        '<time>' + esc(n.date) + '</time><div class="txt">' +
+        (n.logo ? '<img class="news-logo" src="' + esc(n.logo) + '" alt="" width="20" height="20" loading="lazy">' : '') +
+        n.text + '</div></li>';
     }).join('');
     if (news.length <= LIMIT) { btn.hidden = true; return; }
     function label() { btn.textContent = open ? 'Show less' : 'Show all ' + news.length + ' updates'; }

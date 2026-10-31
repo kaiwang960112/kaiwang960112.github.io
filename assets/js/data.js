@@ -182,12 +182,12 @@ window.SITE = {
     }
   ],
 
-  // date: short label shown on the left; html is allowed in text.
+  // date: short label shown on the left; html is allowed in text; logo: optional small icon.
   news: [
-    { date: "Oct 2026", text: 'Our agent technology now also powers online PPT creation in <b>Tencent ima</b>.' },
+    { date: "Oct 2026", logo: "assets/img/logos/ima.webp", text: 'Our agent technology now also powers online PPT creation in <b>Tencent ima</b>.' },
     { date: "Oct 2026", text: '<a href="https://scholar.google.com/citations?user=9lKm_5IAAAAJ">Dongwen</a> is admitted to the NUS PhD program. Congratulations!' },
     { date: "Oct 2026", hot: true, text: '<a href="https://lizekai-richard.github.io/">Zekai</a>\'s paper <b>DD-Ranking: Rethinking the Evaluation of Dataset Distillation</b> is accepted as an <b>Oral</b> at the NeurIPS 2026 Evaluations &amp; Datasets Track (15 orals out of 3,757 submissions, top 0.4%).' },
-    { date: "Sep 2026", hot: true, text: 'Our agent technology now powers online PPT creation in <b>Tencent WorkBuddy</b>, delivering strong results for users. <a href="https://mp.weixin.qq.com/s/kB1es3oU-Ilg-sI5zddHRw">Read more</a>' },
+    { date: "Sep 2026", hot: true, logo: "assets/img/logos/workbuddy.webp", text: 'Our agent technology now powers online PPT creation in <b>Tencent WorkBuddy</b>, delivering strong results for users. <a href="https://mp.weixin.qq.com/s/kB1es3oU-Ilg-sI5zddHRw">Read more</a>' },
     { date: "Sep 2026", text: "Four papers accepted to <b>NeurIPS 2026</b>." },
     { date: "Mar 2026", hot: true, text: '<a href="https://tencent-hy-wu.github.io/"><b>HY-WU (混元-无相)</b></a> is released: a next-generation AI system featuring formless and adaptive parameter generation.' },
     { date: "Jan 2026", text: '<a href="https://cypher-bruce.github.io/">Mengxuan</a> is admitted to the UT Austin PhD program. Congratulations!' },
