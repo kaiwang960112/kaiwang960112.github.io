@@ -184,6 +184,7 @@ window.SITE = {
 
   // date: short label shown on the left; html is allowed in text.
   news: [
+    { date: "Oct 2026", text: '<a href="https://scholar.google.com/citations?user=9lKm_5IAAAAJ">Dongwen</a> is admitted to the NUS PhD program. Congratulations!' },
     { date: "Oct 2026", hot: true, text: '<a href="https://lizekai-richard.github.io/">Zekai</a>\'s paper <b>DD-Ranking: Rethinking the Evaluation of Dataset Distillation</b> is accepted as an <b>Oral</b> at the NeurIPS 2026 Evaluations &amp; Datasets Track (15 orals out of 3,757 submissions, top 0.4%).' },
     { date: "Sep 2026", text: "Four papers accepted to <b>NeurIPS 2026</b>." },
     { date: "Mar 2026", hot: true, text: '<a href="https://tencent-hy-wu.github.io/"><b>HY-WU (混元-无相)</b></a> is released: a next-generation AI system featuring formless and adaptive parameter generation.' },
@@ -264,7 +265,7 @@ window.SITE = {
       { name: "Ziqiao Wang", url: "https://openreview.net/profile?id=~Ziqiao_Wang2", now: "Ph.D., NUS", pubs: ["NeurIPS 2025"] },
       { name: "Yuhao Zhou", url: "https://scholar.google.com/citations?user=bGKF2tUAAAAJ", now: "Ph.D., Sichuan University" },
       { name: "Zhiyuan Liang", url: "https://jerryliang24.github.io/", now: "Undergraduate, USTC", pubs: ["3× NeurIPS 2025"] },
-      { name: "Dongwen Tang", url: "https://scholar.google.com/citations?user=9lKm_5IAAAAJ", now: "Undergraduate, Xidian University", pubs: ["2× NeurIPS 2025", "EMNLP 2025"] },
+      { name: "Dongwen Tang", url: "https://scholar.google.com/citations?user=9lKm_5IAAAAJ", now: "Undergraduate, Xidian University → Ph.D., NUS", pubs: ["2× NeurIPS 2025", "EMNLP 2025"] },
       { name: "Zekai Li", url: "https://lizekai-richard.github.io/", now: "Ph.D., UCSD", pubs: ["2× CVPR 2025", "2× NeurIPS 2025"] },
       { name: "Yukun Zhou", url: "https://twitter.com/YuKunZhou9", now: "Undergraduate, Xidian University", pubs: ["CVPR 2025"] },
       { name: "Tianyi Li", url: "https://scholar.google.com/citations?user=pHXKrL0AAAAJ", now: "Ph.D., HKU" },
