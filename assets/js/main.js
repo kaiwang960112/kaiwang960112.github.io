@@ -162,7 +162,7 @@
   function initNews() {
     var news = D.news || [], list = $('#news-list');
     if (list) {
-      var LIMIT = 6;
+      var LIMIT = 8;
       list.innerHTML = news.map(function (n, i) {
         return '<li class="' + (n.hot ? 'hot' : '') + '"' + (i >= LIMIT ? ' hidden' : '') + '>' +
           '<time>' + esc(n.date) + '</time><div class="txt">' +
