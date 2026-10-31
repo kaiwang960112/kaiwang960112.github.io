@@ -184,6 +184,7 @@ window.SITE = {
 
   // date: short label shown on the left; html is allowed in text.
   news: [
+    { date: "Oct 2026", hot: true, text: 'Our team now powers the online PPT generation in <b>Tencent WorkBuddy</b>, with strong results in production. <a href="https://mp.weixin.qq.com/s/kB1es3oU-Ilg-sI5zddHRw">Read more</a>' },
     { date: "Oct 2026", text: '<a href="https://scholar.google.com/citations?user=9lKm_5IAAAAJ">Dongwen</a> is admitted to the NUS PhD program. Congratulations!' },
     { date: "Oct 2026", hot: true, text: '<a href="https://lizekai-richard.github.io/">Zekai</a>\'s paper <b>DD-Ranking: Rethinking the Evaluation of Dataset Distillation</b> is accepted as an <b>Oral</b> at the NeurIPS 2026 Evaluations &amp; Datasets Track (15 orals out of 3,757 submissions, top 0.4%).' },
     { date: "Sep 2026", text: "Four papers accepted to <b>NeurIPS 2026</b>." },
