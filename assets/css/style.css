@@ -223,6 +223,8 @@ b, strong { font-weight: 600; }
 .about-grid { display: grid; grid-template-columns: 1fr 340px; gap: 48px; align-items: start; }
 .prose p { margin: 0 0 16px; color: var(--text-2); font-size: 17px; }
 .prose a { font-weight: 500; }
+.about-sub { font: 600 13px/1 var(--font); letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); margin: 12px 0 12px; }
+.about-tags li { font-size: 13px; padding: 6px 12px; }
 .callout {
   position: relative; padding: 28px; border-radius: 20px;
   background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow-lg);
@@ -230,11 +232,11 @@ b, strong { font-weight: 600; }
 }
 .callout::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; background: var(--grad); }
 .callout-tag { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--hot); margin-bottom: 8px; }
-.callout h3 { font-size: 22px; margin-bottom: 10px; }
-.callout p { color: var(--text-2); font-size: 15px; margin: 0 0 20px; }
-.callout .callout-mail { margin: 16px 0 0; font-size: 13px; line-height: 1.6; color: var(--text-3); overflow-wrap: anywhere; }
+.callout h3 { font-size: 22px; margin-bottom: 8px; }
+.callout p { color: var(--text-2); font-size: 15px; margin: 0 0 16px; }
+.callout .callout-mail { margin: 14px 0 0; font-size: 13px; line-height: 1.6; color: var(--text-3); overflow-wrap: anywhere; }
 .callout .callout-mail b { color: var(--text-2); }
-.roles { list-style: none; margin: 0 0 22px; padding: 0; display: grid; gap: 10px; }
+.roles { list-style: none; margin: 0 0 20px; padding: 0; display: grid; gap: 10px; }
 .roles li { position: relative; padding-left: 18px; font-size: 14.5px; line-height: 1.45; }
 .roles li::before { content: ""; position: absolute; left: 2px; top: 7px; width: 8px; height: 8px; border-radius: 50%; background: var(--grad); }
 .roles b { display: block; color: var(--text); }
