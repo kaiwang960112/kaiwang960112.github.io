@@ -258,6 +258,18 @@ b, strong { font-weight: 600; }
 .news .txt b { color: var(--text); }
 .news-logo { display: inline-block; width: 20px; height: 20px; margin: 0 6px 0 0; vertical-align: -4px; border-radius: 5px; }
 .news li[hidden] { display: none; }
+.news-grid { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.news-sub { font: 600 13px/1 var(--font); letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); margin: 0 0 16px; }
+.impact { list-style: none; margin: 0 0 24px; padding: 0; display: grid; gap: 10px; }
+.impact li { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 12px; align-items: start; padding: 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); }
+.impact li[hidden] { display: none; }
+.impact-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px; background: var(--accent-soft); color: var(--accent); overflow: hidden; }
+.impact-icon img { width: 32px; height: 32px; }
+.impact-icon .ico { width: 17px; height: 17px; }
+.impact time { display: block; font-size: 12px; font-weight: 600; color: var(--text-3); font-variant-numeric: tabular-nums; margin-bottom: 2px; }
+.impact .txt { font-size: 14px; line-height: 1.55; color: var(--text-2); }
+.impact .txt b { color: var(--text); }
+@media (max-width: 900px) { .news-grid { grid-template-columns: 1fr; gap: 32px; } }
 @media (max-width: 600px) { .news li { grid-template-columns: 1fr; gap: 0; } }
 
 /* Research cards */

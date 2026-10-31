@@ -145,25 +145,45 @@
   }
 
   /* ---------- News ---------- */
-  function initNews() {
-    var news = D.news || [], list = $('#news-list'), btn = $('#news-more');
-    if (!list) return;
-    var LIMIT = 6, open = false;
-    list.innerHTML = news.map(function (n, i) {
-      return '<li class="' + (n.hot ? 'hot' : '') + '"' + (i >= LIMIT ? ' hidden' : '') + '>' +
-        '<time>' + esc(n.date) + '</time><div class="txt">' +
-        (n.logo ? '<img class="news-logo" src="' + esc(n.logo) + '" alt="" width="20" height="20" loading="lazy">' : '') +
-        n.text + '</div></li>';
-    }).join('');
-    if (news.length <= LIMIT) { btn.hidden = true; return; }
-    function label() { btn.textContent = open ? 'Show less' : 'Show all ' + news.length + ' updates'; }
+  // Show the first `limit` items of a list, with a toggle for the rest.
+  function collapsible(list, btn, total, limit, noun) {
+    if (total <= limit) { btn.hidden = true; return; }
+    var open = false;
+    function label() { btn.textContent = open ? 'Show less' : 'Show all ' + total + ' ' + noun; }
     label();
     btn.addEventListener('click', function () {
       open = !open;
-      list.querySelectorAll('li').forEach(function (li, i) { if (i >= LIMIT) li.hidden = !open; });
+      list.querySelectorAll(':scope > li').forEach(function (li, i) { if (i >= limit) li.hidden = !open; });
       label();
       if (!open) $('#news').scrollIntoView({ behavior: 'smooth' });
     });
+  }
+
+  function initNews() {
+    var news = D.news || [], list = $('#news-list');
+    if (list) {
+      var LIMIT = 6;
+      list.innerHTML = news.map(function (n, i) {
+        return '<li class="' + (n.hot ? 'hot' : '') + '"' + (i >= LIMIT ? ' hidden' : '') + '>' +
+          '<time>' + esc(n.date) + '</time><div class="txt">' +
+          (n.logo ? '<img class="news-logo" src="' + esc(n.logo) + '" alt="" width="20" height="20" loading="lazy">' : '') +
+          n.text + '</div></li>';
+      }).join('');
+      collapsible(list, $('#news-more'), news.length, LIMIT, 'updates');
+    }
+
+    var impact = D.impact || [], ilist = $('#impact-list');
+    if (ilist) {
+      var ILIMIT = 4;
+      ilist.innerHTML = impact.map(function (n, i) {
+        var badge = n.logo
+          ? '<img src="' + esc(n.logo) + '" alt="" width="32" height="32" loading="lazy">'
+          : '<svg class="ico"><use href="#i-' + esc(n.icon || 'bolt') + '"/></svg>';
+        return '<li' + (i >= ILIMIT ? ' hidden' : '') + '><span class="impact-icon">' + badge + '</span>' +
+          '<div><time>' + esc(n.date) + '</time><div class="txt">' + n.text + '</div></div></li>';
+      }).join('');
+      collapsible(ilist, $('#impact-more'), impact.length, ILIMIT, 'items');
+    }
   }
 
   /* ---------- Experience ---------- */

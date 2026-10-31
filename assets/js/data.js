@@ -184,21 +184,15 @@ window.SITE = {
 
   // date: short label shown on the left; html is allowed in text; logo: optional small icon.
   news: [
-    { date: "Oct 2026", logo: "assets/img/logos/ima.webp", text: 'Our agent technology now also powers online PPT creation in <b>Tencent ima</b>.' },
     { date: "Oct 2026", text: '<a href="https://scholar.google.com/citations?user=9lKm_5IAAAAJ">Dongwen</a> is admitted to the NUS PhD program. Congratulations!' },
     { date: "Oct 2026", hot: true, text: '<a href="https://lizekai-richard.github.io/">Zekai</a>\'s paper <b>DD-Ranking: Rethinking the Evaluation of Dataset Distillation</b> is accepted as an <b>Oral</b> at the NeurIPS 2026 Evaluations &amp; Datasets Track (15 orals out of 3,757 submissions, top 0.4%).' },
-    { date: "Sep 2026", hot: true, logo: "assets/img/logos/workbuddy.webp", text: 'Our agent technology now powers online PPT creation in <b>Tencent WorkBuddy</b>, delivering strong results for users. <a href="https://mp.weixin.qq.com/s/kB1es3oU-Ilg-sI5zddHRw">Read more</a>' },
     { date: "Sep 2026", text: "Four papers accepted to <b>NeurIPS 2026</b>." },
-    { date: "Mar 2026", hot: true, text: '<a href="https://tencent-hy-wu.github.io/"><b>HY-WU (混元-无相)</b></a> is released: a next-generation AI system featuring formless and adaptive parameter generation.' },
     { date: "Jan 2026", text: '<a href="https://cypher-bruce.github.io/">Mengxuan</a> is admitted to the UT Austin PhD program. Congratulations!' },
     { date: "Sep 2025", text: "Seven papers accepted to <b>NeurIPS 2025</b>." },
     { date: "May 2025", text: "Two papers accepted to <b>ICML 2025</b>. Congrats to Ziheng, Wangbo, and Pan!" },
     { date: "Mar 2025", text: '<a href="https://lizekai-richard.github.io/">Zekai</a> is admitted to the UCSD PhD program. Congratulations!' },
     { date: "Feb 2025", text: "Four papers accepted to <b>CVPR 2025</b>. Congrats to Zekai, Wangbo, Mingjia, Zhenghao, Haoxuan, and Yukun!" },
-    { date: "Feb 2025", text: '<a href="https://oahzxl.github.io/PAB/">Pyramid Attention Broadcast</a> is merged into <a href="https://huggingface.co/docs/diffusers/main/en/api/cache">HuggingFace Diffusers</a>.' },
     { date: "Jan 2025", text: "Passed my PhD thesis defense!" },
-    { date: "Dec 2024", text: '<a href="https://oahzxl.github.io/Enhance_A_Video/">Enhance-A-Video</a> is merged into <a href="https://github.com/kijai/ComfyUI-CogVideoXWrapper">ComfyUI-CogVideo</a>, <a href="https://github.com/logtd/ComfyUI-LTXTricks">ComfyUI-LTX</a>, and <a href="https://github.com/kijai/ComfyUI-HunyuanVideoWrapper">ComfyUI-Hunyuan</a>. Many thanks to <a href="https://github.com/kijai">kijai</a>!' },
-    { date: "Sep 2024", text: '<a href="https://oahzxl.github.io/PAB/">Pyramid Attention Broadcast</a> is cited by the <a href="https://ai.meta.com/static-resource/movie-gen-research-paper">Meta Movie Gen report</a>.' },
     { date: "Sep 2024", text: "Congrats to my coauthors on their papers accepted to <b>NeurIPS 2024</b>!" },
     { date: "Jul 2024", text: '<a href="https://arxiv.org/pdf/2405.18347">Dataset Growth</a> is accepted to <b>ECCV 2024</b>.' },
     { date: "May 2024", text: "Three papers accepted to <b>ICML 2024</b>." },
@@ -228,6 +222,19 @@ window.SITE = {
     { date: "Jan 2020", text: "Started a part-time internship at <b>Huawei Cloud</b>." },
     { date: "Dec 2019", text: "One paper accepted to <b>IEEE TIP</b> and one to <b>AAAI 2020</b>." },
     { date: "Oct 2019", text: "Three papers accepted to <b>ICMI 2019</b>." }
+  ],
+
+  // Products & Impact column: product launches, adoption, and community reach.
+  // icon: agent | weights | bolt (used when there is no logo).
+  impact: [
+    { date: "Oct 2026", logo: "assets/img/logos/ima.webp", text: 'Our agent technology now also powers online PPT creation in <b>Tencent ima</b>.' },
+    { date: "Sep 2026", logo: "assets/img/logos/workbuddy.webp", text: 'Our agent technology now powers online PPT creation in <b>Tencent WorkBuddy</b>, delivering strong results for users. <a href="https://mp.weixin.qq.com/s/kB1es3oU-Ilg-sI5zddHRw">Read more</a>' },
+    { icon: "agent", date: "Aug 2026", text: '<a href="https://arxiv.org/abs/2608.15089"><b>StateM</b></a> + DeepSeek reaches state-of-the-art on <b>Terminal-Bench 2.1</b>, with <b>1.5k+</b> <a href="https://github.com/henryqin1997/statem">GitHub stars</a> and <b>190K+</b> <a href="https://x.com/henryqin1997/status/2089608567418691863">views on X</a>.' },
+    { icon: "weights", date: "Mar 2026", text: '<a href="https://tencent-hy-wu.github.io/"><b>HY-WU (混元-无相)</b></a> is released: a next-generation AI system featuring formless and adaptive parameter generation.' },
+    { icon: "bolt", date: "Feb 2025", text: '<a href="https://oahzxl.github.io/PAB/">Pyramid Attention Broadcast</a> is merged into <a href="https://huggingface.co/docs/diffusers/main/en/api/cache">HuggingFace Diffusers</a>.' },
+    { icon: "bolt", date: "Dec 2024", text: '<a href="https://oahzxl.github.io/Enhance_A_Video/">Enhance-A-Video</a> is merged into <a href="https://github.com/kijai/ComfyUI-CogVideoXWrapper">ComfyUI-CogVideo</a>, <a href="https://github.com/logtd/ComfyUI-LTXTricks">ComfyUI-LTX</a>, and <a href="https://github.com/kijai/ComfyUI-HunyuanVideoWrapper">ComfyUI-Hunyuan</a>. Many thanks to <a href="https://github.com/kijai">kijai</a>!' },
+    { icon: "bolt", date: "Sep 2024", text: '<a href="https://oahzxl.github.io/PAB/">Pyramid Attention Broadcast</a> is cited by the <a href="https://ai.meta.com/static-resource/movie-gen-research-paper">Meta Movie Gen report</a>.' },
+    { icon: "weights", date: "Feb 2024", text: '<a href="https://arxiv.org/abs/2402.13144"><b>Neural Network Diffusion</b></a> is reposted with comments by <b>Yann LeCun</b>, reaching <b>450K+</b> views on X.' }
   ],
 
   experience: [
