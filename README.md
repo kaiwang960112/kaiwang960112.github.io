@@ -35,3 +35,7 @@ After editing `assets/css/style.css` or anything in `assets/js/`, bump the `?v=`
 ```bash
 python3 -m http.server 8000   # then open http://localhost:8000
 ```
+
+## Theme history
+
+The current theme is a flat, light "academic minimal" style with Tencent blue (`#0052d9`) as the only accent. The previous purple-gradient theme is kept on the `backup-purple-theme` branch. To bring it back, restore `index.html`, `assets/css/style.css`, `assets/js/main.js`, and `assets/img/favicon.svg` from that branch, then bump the `?v=` version.

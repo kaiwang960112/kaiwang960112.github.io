@@ -201,13 +201,13 @@
   }
 
   /* ---------- People ---------- */
-  var PALETTE = [['#6366f1', '#8b5cf6'], ['#0891b2', '#22d3ee'], ['#db2777', '#f472b6'], ['#059669', '#34d399'], ['#d97706', '#fbbf24'], ['#4f46e5', '#06b6d4']];
+  var PALETTE = ['#0052d9', '#0e7490', '#15803d', '#b45309', '#475569', '#9f1239'];
   function avatar(name) {
     var h = 0;
     for (var i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
     var c = PALETTE[h % PALETTE.length];
     var initials = name.split(/\s+/).map(function (w) { return w[0]; }).join('').slice(0, 2);
-    return '<span class="avatar" aria-hidden="true" style="background:linear-gradient(135deg,' + c[0] + ',' + c[1] + ')">' + esc(initials) + '</span>';
+    return '<span class="avatar" aria-hidden="true" style="background:' + c + '">' + esc(initials) + '</span>';
   }
   function peopleHTML(arr) {
     return arr.map(function (p) {
