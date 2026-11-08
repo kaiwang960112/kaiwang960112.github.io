@@ -142,7 +142,7 @@ window.SITE = {
       authors: "Kai Wang, Bo Zhao, Xiangyu Peng, Zheng Zhu, Shuo Yang, Shuo Wang, Guan Huang, Hakan Bilen, Xinchao Wang, Yang You",
       venue: "CVPR 2022", type: "conference", year: 2022,
       topics: ["data"], selected: true,
-      citations: 470,
+      citations: 473,
       img: "assets/img/papers/CVPR-2022-CAFE.webp",
       links: { Paper: "https://arxiv.org/pdf/2203.01531.pdf", Code: "https://github.com/kaiwang960112/CAFE" }
     },
@@ -167,7 +167,7 @@ window.SITE = {
       authors: "Kai Wang, Xiaojiang Peng, Jianfei Yang, Shijian Lu, Yu Qiao",
       venue: "CVPR 2020", type: "conference", year: 2020,
       topics: ["vision"], selected: true,
-      citations: 995,
+      citations: 1004,
       img: "assets/img/papers/CVPR-2020-SCN.webp",
       links: { Paper: "https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_Suppressing_Uncertainties_for_Large-Scale_Facial_Expression_Recognition_CVPR_2020_paper.pdf", Code: "https://github.com/kaiwang960112/Self-Cure-Network" }
     },
@@ -176,7 +176,7 @@ window.SITE = {
       authors: "Kai Wang, Xiaojiang Peng, Jianfei Yang, Debin Meng, Yu Qiao",
       venue: "IEEE TIP 2020", type: "journal", year: 2020,
       topics: ["vision"], selected: true,
-      citations: 1175,
+      citations: 1182,
       img: "assets/img/papers/TIP-2020-RAN.webp",
       links: { Paper: "https://arxiv.org/pdf/1905.04075.pdf", Code: "https://github.com/kaiwang960112/Challenge-condition-FER-dataset" }
     }
