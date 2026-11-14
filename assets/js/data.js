@@ -11,6 +11,13 @@
 window.SITE = {
   publications: [
     {
+      title: "DD-Ranking: Rethinking the Evaluation of Dataset Distillation",
+      authors: "Zekai Li, Xinhao Zhong, et al., Zhangyang Wang, Bo Zhao, Yang You, Kai Wang",
+      venue: "NeurIPS 2026", type: "conference", year: 2026, note: "Oral · Evaluations & Datasets Track (top 0.4%)",
+      topics: ["data"], selected: true,
+      links: { Paper: "https://arxiv.org/abs/2505.13300", NeurIPS: "https://neurips.cc/virtual/2026/oral/139356" }
+    },
+    {
       title: "StateM: Reaching 95.3% Raw Accuracy, or a $15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling",
       authors: "Ziheng Qin, Yaxin Lu, Zhangyang Wang, Kai Wang",
       venue: "arXiv 2026", type: "preprint", year: 2026,
