@@ -299,6 +299,7 @@ b, strong { font-weight: 600; }
   transition: box-shadow .2s, border-color .2s;
 }
 .pub:hover { box-shadow: var(--shadow-lg); border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
+.pub.no-thumb { grid-template-columns: 1fr; }
 .pub-thumb {
   display: grid; place-items: center; aspect-ratio: 16 / 10; overflow: hidden;
   border-radius: 10px; background: var(--thumb-bg); border: 1px solid var(--border);

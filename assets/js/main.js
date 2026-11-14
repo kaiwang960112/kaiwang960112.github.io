@@ -43,9 +43,9 @@
       }
       return '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(k) + extra + arrow + '</a>';
     }).join('');
-    return '<article class="pub reveal">' +
+    return '<article class="pub reveal' + (p.img ? '' : ' no-thumb') + '">' +
       (p.img ? '<button class="pub-thumb" type="button" data-full="' + esc(p.img) + '" aria-label="Enlarge figure for ' + esc(p.title) + '">' +
-        '<img src="' + esc(p.img) + '" alt="" loading="lazy" decoding="async"></button>' : '<div></div>') +
+        '<img src="' + esc(p.img) + '" alt="" loading="lazy" decoding="async"></button>' : '') +
       '<div>' +
         '<div class="pub-meta"><span class="badge ' + esc(p.type) + '">' + esc(p.venue) + '</span>' +
           (p.note ? '<span class="badge note">' + esc(p.note) + '</span>' : '') +
